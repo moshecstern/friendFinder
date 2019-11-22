@@ -1,9 +1,29 @@
 // store data of friends
 var tableArray = [
     {
-        "name": "moshe",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        "scores": [5,1,4,5,3,4,4,5,4,2]
+        "name": "abraham",
+        "photo": "https://assetsnffrgf-a.akamaihd.net/assets/m/1102013273/univ/art/1102013273_univ_lsr_xl.jpg",
+        "score": [5,5,5,5,5,5,5,5,5,5]
+    },
+    {
+        "name": "issach",
+        "photo": "https://assetsnffrgf-a.akamaihd.net/assets/m/1102013273/univ/art/1102013273_univ_lsr_xl.jpg",
+        "score": [4,4,4,4,4,4,4,4,4,4]
+    },
+    {
+        "name": "jacob",
+        "photo": "https://assetsnffrgf-a.akamaihd.net/assets/m/1102013273/univ/art/1102013273_univ_lsr_xl.jpg",
+        "score": [3,3,3,3,3,3,3,3,3,3,3]
+    },
+    {
+        "name": "david",
+        "photo": "https://assetsnffrgf-a.akamaihd.net/assets/m/1102013273/univ/art/1102013273_univ_lsr_xl.jpg",
+        "score": [2,2,2,2,2,2,2,2,2,2]
+    },
+    {
+        "name": "solomon",
+        "photo": "https://assetsnffrgf-a.akamaihd.net/assets/m/1102013273/univ/art/1102013273_univ_lsr_xl.jpg",
+        "score": [1,1,1,1,1,1,1,1,1,1]
     }
 ];
 module.exports = tableArray;
