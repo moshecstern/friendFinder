@@ -71,7 +71,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 4</strong></h3>
-      <h4>I like staying in.</h4>
+      <h4>I love dogs.</h4>
       <select data-placeholder="" class="chosen-select" id="q4">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -81,7 +81,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 5</strong></h3>
-      <h4>I like staying in.</h4>
+      <h4>Ghosts are scary.</h4>
       <select data-placeholder="" class="chosen-select" id="q5">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -91,7 +91,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 6</strong></h3>
-      <h4>I like staying in.</h4>
+      <h4>I prefer to watch romantic comedies.</h4>
       <select data-placeholder="" class="chosen-select" id="q6">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -101,7 +101,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 7</strong></h3>
-      <h4>I like staying in.</h4>
+      <h4>We should all be vegan.</h4>
       <select data-placeholder="" class="chosen-select" id="q7">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -111,7 +111,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 8</strong></h3>
-      <h4>I like staying in.</h4>
+      <h4>There is nothing better than red meat.</h4>
       <select data-placeholder="" class="chosen-select" id="q8">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -168,7 +168,9 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <h3 id="match-name"></h3>
+          <br>
+          <img id="match-img" alt="your match image">
         </div>
         <div class="modal-footer">
           <a href="/"><button type="button" class="btn btn-secondary" data-dismiss="modal"
@@ -253,26 +255,11 @@
           console.log(data.bestmatch);
           console.log(bestmatch.name);
           // console.log(newFriend);
+          
         }) // end of post
-        // var photo = <img>;
 
-        var textDiv = $("<div class=container><h2>you matched with: "+bestmatch.name+"</h2></div>");
-        // div.append($("<img src=" +bestmatch.photo +">"));
-        // // div.append(bestmatch.photo); 
-        // div.append($("<h2>"+bestmatch.name+"</h2>"));
-        // $(".modal-body").append(div);
-
-        var imgDiv = $("<div class=container> <img src="+bestmatch.photo+" alt=''> </div>");
-                // $(".modal-body").append();
-                $(".modal-body").append(imgDiv);
-
-
-        // <div class="container">
-        // <img src="http://placehold.it/260x340" alt="">
-        // </div>
-
-        // $(".modal-body").text(bestmatch.name);
-        // $(".modal-body").
+                  $("#match-name").text("Congratulations! Your match is... " + bestmatch.name);
+                  $("#match-img").attr("src", bestmatch.photo).css("max-width", "100%").addClass("img-responsive");
       }); // end of get 
     } else {
       // If a required field is missing, show alert
