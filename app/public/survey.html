@@ -250,7 +250,7 @@
         console.log(newFriend);
         console.log("new friend logging *********");
 
-        $.post("/data/friends", newFriend, function (data) {
+        $.post(window.location.origin+"/data/friends", newFriend, function (data) {
           console.log(data);
           console.log(data.bestmatch);
           console.log(bestmatch.name);
