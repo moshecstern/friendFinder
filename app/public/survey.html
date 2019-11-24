@@ -224,7 +224,7 @@
         console.log(newFriend.score[i]);
       }
 
-      $.get("/data/friends").then(function (tableData) {
+      $.get(window.location.origin+"/data/friends").then(function (tableData) {
 
         var closestMatch = 0;
         var lowestDiff = 50;
